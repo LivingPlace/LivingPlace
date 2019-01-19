@@ -1,13 +1,14 @@
 $(document).ready(function(){
     $("#signup").click(function(){
-      $("#signUpForm").slideDown("slow");
+      $("#signUpForm").slideDown();
       $(".loginForm").hide();
     });
 
+    $("#fyp").click(function(){
+      $(".loginForm").slideDown();
+      $("#signUpForm").hide();
+    });
     
   });
 
-  $(".started").click(function(){
-    $(".loginForm").show();
-    $("#signUpForm").hide();
-  });
+  

@@ -1,7 +1,11 @@
 html {
     scroll-behavior: smooth;
+    height:100%;
   }
 
+  body{
+      background-color:black;
+  }
 .left{
     height: 100vh;
     background-color: #F8F9F9;
@@ -10,25 +14,9 @@ html {
 
 .right{
     height: 100vh;
-    background: linear-gradient(90deg, rgba(248,249,249,1) 0%, rgba(43,196,255,1) 100%);
+    
+background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(242,250,251,0.8) 25%, rgba(238,248,249,0.8) 50%, rgba(234,247,248,0.8) 75%, rgba(202,234,238,1) 100%);
 }
-
-.center { 
-    height: 100vh;
-    position: relative;
-}
-  
-.center p {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-
-
 .login{
     text-align:center;
     margin-top:30%;
@@ -38,7 +26,7 @@ input{
     padding:4px;
     border:none;
     border-bottom:2px solid white;
-    width:50%;
+    width:60%;
     
     background-color:transparent;
 }
@@ -86,11 +74,6 @@ input:focus{
     margin-right:6rem;
 }
 
-#signup{
-    float:right;
-    margin-right:8rem;
-    margin-top:20px;
-}
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -116,12 +99,31 @@ input:-webkit-autofill:active {
 }
 
 #signUpForm {
-    padding-top:50px;
-    padding-left:10px;
+    padding-top:0px;
+    
     display: none;
-    margin-top:-160px;
+    
   }
 
   ::placeholder{
       color:white;
   }
+
+.forgetPass{
+    font-size:11px;
+    text-align:right;
+}
+
+.center {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    width: 100%;
+  }
+
+.row {
+    background-image:url('https://raw.githubusercontent.com/LivingPlace/LivingPlace/master/RetreatGville_Model_08_300ppi.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
