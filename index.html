@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <link rel="stylesheet" type="text/css" href="css/mainPage.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>LivingSpace - Simple Life</title>
+  </head>
+  <body>
+    <div class="container-fluid left">
+        <div class="row">
+            <div class="col-8 center">
+                    <p>Input Text Here...</p>
+            </div>
+            <div class="col-lg right">
+                <div class="container">
+
+<!-- This is signup screen-->      
+                    <div id="signUpForm">
+                        <h1 class="loginTag signupTag">Living Place Sign up</h1>
+                        <br><br>
+                        <form>
+                                <div class="username">
+                                   
+                                    <span style="font-family: 'PT Sans', sans-serif;font-weight:700;margin-left:-40px;font-size:14px;">username:</span><input type="text" class="mobileInput" name="username" required oninvalid="this.setCustomValidity('Please enter username')" oninput="setCustomValidity('')">
+                                </div>
+                                <div class="username">
+                                        <span style="font-family: 'PT Sans', sans-serif;font-weight:700;margin-left:-40px;font-size:14px;">password:</span><input type="password" class="mobileInput" name="password" required oninvalid="this.setCustomValidity('Please enter password')" oninput="setCustomValidity('')">
+                                </div>
+                                <div class="username">
+                                        <span style="font-family: 'PT Sans', sans-serif;font-weight:700;margin-left:-40px;font-size:14px;">email:</span><input style="margin-right:-25px;" class="mobileInput" type="text" name="email" required oninvalid="this.setCustomValidity('Please enter email address')" oninput="setCustomValidity('')">
+                                </div>
+                                <div class="username">
+                                        <span style="font-family: 'PT Sans', sans-serif;font-weight:700;margin-left:-40px;font-size:14px;">birthdate:</span><input style="margin-right:5px;" class="mobileInput" type="text" name="email" placeholder="MM/DD/YYYY" required oninvalid="this.setCustomValidity('Please enter birthdate')" oninput="setCustomValidity('')">
+                                </div><br>
+                            <div><p id="fyp">Already have an account? <a href="index.html">Click here</a>.</p>
+                                <button type="submit" class="btn btn-outline-dark btn-md"><strong>Sign up</strong></button>
+                            </div>
+                            </form>
+                    </div>
+<!-- This is default screen-->
+
+<div class="center" id="getStarted">
+                    <h1 id="logform" >Living Place</h1>
+                    <form>
+                        <div class="username">
+                            <span style="font-family: 'PT Sans', sans-serif;font-weight:700;margin-right:20px;">username:</span><input type="text" name="username" required oninvalid="this.setCustomValidity('Please enter username')" oninput="setCustomValidity('')">
+                        </div>
+                        <div class="password">
+                                <span style="font-family: 'PT Sans', sans-serif;font-weight:700;margin-right:20px;">password:</span><input type="password" name="password" required oninvalid="this.setCustomValidity('Please enter password')" oninput="setCustomValidity('')">
+                        </div>
+                        <div>
+                           <a class= "forgetPass"href="#"><h6>22</h6></a>
+                    </div>
+                    <div>
+                        <a href="homepage.html"><button type="submit" class="btn btn-outline-dark btn-md"><strong>Login</strong></button></a>
+                        <button class="btn btn-danger">Sign up</button>
+                    </div>
+                    </form>
+                </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="JavaScript/mainPage.js"></script>
+  </body>
+</html>
