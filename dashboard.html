@@ -1,44 +1,91 @@
 <!doctype html>
 <html lang="en">
   <head>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
     
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+    <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-      <a class="navbar-brand" href="dashboard.html" style="font-family: Thasadith">Living<span style="color:#3498DB;">Place</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                          <a class="nav-link active" href="#"><i class="fas fa-columns"></i>    Dashboard</a>
-                        </li>
-          </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-clipboard-list"></i>Favorites</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-user-tie"></i>Personal Info</a>
-          </li>
-          <li class="nav-item logoutMobile">
-        <a href="index.html"><button class="btn btn-outline-info">Sign out</button></a>
-      </li>
-        </ul>
-      </div>
-    </nav>
-
     
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+          <a class="navbar-brand" href="#">Living<span style="color:#3498DB;">Place</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+              </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-user-tie"></i>  Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-home"></i>  My sublets</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-file-contract"></i> Contact us</a>
+                </li>
+            <a href="index.html"><button class="btn btn-outline-info">Sign out</button></a>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-4 filter" style="font-size:16px;">
+                  <form><br>
+                      Date: <br><input type="date" />
+                      <br>
+                      To: <br><input type="date" />
+                      <br><br>
+                      <span style="font-size:15px;">Distance:</span> <br><input type="number" class="input-sm" > to <input type="number"> Miles
+                      <br>
+                      <span style="font-size:15px;">Price:</span> <br><input type="number"> to <input type="number"> $USD
+                      <br><br><br><br>
+                      Number of rooms:
+                      <select>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5+">5+</option>
+                        </select>
+                      <br><br>
+      
+                    <input type="checkbox" name="vehicle1" value="Bike"> Bus Stop Nearby<br>
+                    <input type="checkbox" name="vehicle2" value="Car"> Individual Bathroom<br>
+                    <input type="checkbox" name="vehicle3" value="Boat"> Pet Friendly<br>
+                    <input type="checkbox" name="vehicle3" value="Boat"> Swimming Pool<br>
+                    <input type="checkbox" name="vehicle3" value="Boat"> Gym<br>
+                    <input type="checkbox" name="vehicle3" value="Boat"> My Favorite<br>
+                    
+                    <div style="text-align:center;">
+                    <button class="btn btn-outline-primary my-sm-0" type="submit">Apply</button>
+                  </div>
+                  </form>
+              </div>
+              <div class="col-sm">
+                  <form class="form-inline my-3">
+                      <input class="form-control mr" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-sm-0" type="submit">Search</button>
+                      
+                  </form>
+              </div>
+            </div>
+          </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

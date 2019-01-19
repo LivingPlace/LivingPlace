@@ -1,0 +1,34 @@
+.sb{
+    margin: auto;
+  width: 40%;
+  padding-left: 10px;
+  padding-right: 100px;
+}
+
+.form-inline{
+}
+
+.ft{
+    position: absolute;
+    top:11.55%;
+    right:30%;
+}
+
+input[type="search"]{
+    width:50% !important;
+}
+
+input[type="number"]{
+    border-radius:5px;
+    border:1px solid black;
+    width:50px;
+}
+
+input:focus{
+    outline:none;
+}
+input[type="date"]{
+    border-radius:5px;
+    border:1px solid black;
+    
+}
