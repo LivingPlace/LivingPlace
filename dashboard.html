@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/dashboard.css">
 
-    <title>Hello, world!</title>
+    <title>DashBoard</title>
   </head>
   <body>
     
@@ -29,13 +29,10 @@
               </ul>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-user-tie"></i>  Account</a>
+                <a class="nav-link" href="mySublet.html"><i class="fas fa-home"></i>  My sublets</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-home"></i>  My sublets</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fas fa-file-contract"></i> Contact us</a>
+                  <a class="nav-link" href="contactUs.html"><i class="fas fa-file-contract"></i> Contact us</a>
                 </li>
             <a href="index.html"><button class="btn btn-outline-info">Sign out</button></a>
             </ul>
@@ -45,17 +42,18 @@
         <div class="container-fluid">
             <div class="row">
               <div class="col-3 filter" style="font-size:16px;">
-                  <form><br>
-                      Date: <br><input type="date" />
+                  <form class="filterLeft"><br>
+                      Date: <br><input type="date" name="startDate"/>
                       <br>
-                      To: <br><input type="date" />
+                      To: <br><input type="date" name="endDate"/>
                       <br><br>
-                      <span style="font-size:15px;">Distance:</span> <br><input type="number" class="input-sm" > to <input type="number"> Miles
+                      <span style="font-size:15px;">Distance:</span> <br><input type="number" name="distance1" class="input-sm" min="0"> to <input type="number" name="distance2" min="0"> Miles
                       <br>
-                      <span style="font-size:15px;">Price:</span> <br><input type="number"> to <input type="number"> $USD
+                      <span style="font-size:15px;">Price:</span> <br><input type="number" name="price1" > to <input type="number" name="price2"> $USD
                       <br><br><br><br>
                       Number of rooms:
-                      <select>
+                      <select name="roomNO">
+                        
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -64,34 +62,94 @@
                         </select>
                       <br><br>
       
-                    <input type="checkbox" name="vehicle1" value="Bike"> Bus Stop Nearby<br>
-                    <input type="checkbox" name="vehicle2" value="Car"> Individual Bathroom<br>
-                    <input type="checkbox" name="vehicle3" value="Boat"> Pet Friendly<br>
-                    <input type="checkbox" name="vehicle3" value="Boat"> Swimming Pool<br>
-                    <input type="checkbox" name="vehicle3" value="Boat"> Gym<br>
-                    <input type="checkbox" name="vehicle3" value="Boat"> My Favorite<br>
-                    
-                    <div style="text-align:center;margin-left:35px;">
+                    <input type="checkbox" name="bus_stop" value="1"> Bus Stop Nearby<br>
+                    <input type="checkbox" name="ind_bath" value="1"> Individual Bathroom<br>
+                    <input type="checkbox" name="pet_friend" value="1"> Pet Friendly<br>
+                    <input type="checkbox" name="pool" value="1"> Swimming Pool<br>
+                    <input type="checkbox" name="gym" value="1"> Gym<br>
+                    <input type="checkbox" name="fav" value="1"> My Favorite<br>
                     <button class="btn btn-outline-primary my-sm-0" type="submit">Apply</button>
-                  </div>
                   </form>
               </div>
-              <div class="col-sm">
-                  <button type="button" class="btn btn-primary" style="float:left">Primary</button>
-                  <form class="form-inline my-3">
-                      <input class="form-control mr" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success my-sm-0" type="submit">Search</button>
-                      
-                  </form>
+              <div class="col-sm">   
+                  <div class="row">
+                      <div class="col-sm" style="margin-top:20px;">
+                          
+                      </div>
+                      <div class="col-sm">
+                        <div class = "row" style="margin-top:20px;">
+                            <input class="form-control mr" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-sm-0" type="submit">Search</button>
+                        </div>
+                      </div>
+                      <div class="col-sm" style="margin-top:50px;margin-right:-50px;margin-left:60px">
+                          <a href="createNewRoom.html"><button type="button" class="btn btn-info">Get a room available? <br>Click me! </button></a>
+                      </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+
+                                <div class="card" style="width: 15rem;">
+                                    <img class="card-img-top" src="https://studio.pinotspalette.com/edwardsville/images/house-images-2013-3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sub Text Here <span style="float:right"><a href="detailPage.html"><button type="button" class="btn btn-success btn-sm">details</button></a></span></h5>
+                                      <p class="card-text">$500</p>
+                                      <p class="card-text ava">Available from: Jan 19 - Aug 19</p>
+                                      <p class="card-text ava">Distance to UF: 1 mile</p>
+                                      
+                                      
+                                    </div>
+                                  </div>
+
+                            </div>
+                            <div class="col-sm">
+                                <div class="card" style="width: 15rem;">
+                                    <img class="card-img-top" src="https://studio.pinotspalette.com/edwardsville/images/house-images-2013-3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Sub Text Here <span style="float:right"><button type="button" class="btn btn-success btn-sm">details</button></span></h5>
+                                      <p class="card-text">$500</p>
+                                      <p class="card-text ava">Available from: Jan 19 - Aug 19</p>
+                                      <p class="card-text ava">Distance to UF: 1 mile</p>
+                                      
+                                      
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card" style="width: 15rem;">
+                                    <img class="card-img-top" src="https://studio.pinotspalette.com/edwardsville/images/house-images-2013-3.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Sub Text Here <span style="float:right"><button type="button" class="btn btn-success btn-sm">details</button></span></h5>
+                                      <p class="card-text">$500</p>
+                                      <p class="card-text ava">Available from: Jan 19 - Aug 19</p>
+                                      <p class="card-text ava">Distance to UF: 1 mile</p>
+                                      
+                                      
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                    </div>
               </div>
+              
             </div>
           </div>
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script>
+     // $("form").hide();
+      //$( ".filterClick" ).click(function() {
+      //  $("form").toggle("slide");
+      //});
+    
+    </script>
   </body>
 </html>

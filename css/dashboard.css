@@ -5,9 +5,6 @@
   padding-right: 100px;
 }
 
-.form-inline{
-}
-
 .ft{
     position: absolute;
     top:11.55%;
@@ -15,7 +12,8 @@
 }
 
 input[type="search"]{
-    width:50% !important;
+    
+    width:210px;
 }
 
 input[type="number"]{
@@ -31,4 +29,17 @@ input[type="date"]{
     border-radius:5px;
     border:1px solid black;
     
+}
+
+form {
+    padding-left:20px;
+    border-right:1px solid #DDDDDD;
+}
+
+.card {
+    margin-top:40px;
+}
+
+.ava{
+    font-size: 0.8rem;
 }

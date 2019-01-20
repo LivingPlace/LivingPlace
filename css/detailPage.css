@@ -1,0 +1,35 @@
+input[type="search"]{
+    width:300px;
+}
+
+.bigpic{
+    border:1px solid red;
+}
+
+.showtime{
+    margin-top:50px;
+}
+
+.info{
+    margin-top:50px;
+    margin-bottom:100px;
+
+}
+
+.fa-star{
+    color:white;
+}
+
+.information{
+    
+    padding:20px;
+}
+
+.detailedCheck{
+    margin-top:30px;
+}
+
+.summary{
+    border:1px solid black;
+    margin-bottom: 50px;
+}

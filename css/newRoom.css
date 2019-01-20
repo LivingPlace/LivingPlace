@@ -1,0 +1,9 @@
+input{
+    border-radius:5px;
+    border:1px solid black;
+    
+}
+
+input [type="text"]{
+    width:100%;
+}

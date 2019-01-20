@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/newRoom.css">
+    
+    <title>CreateNewRoom</title>
+  </head>
+  <body>
+    
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+          <a class="navbar-brand" href="dashboard.html">Living<span style="color:#3498DB;">Place</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+              </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-home"></i>  My sublets</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-file-contract"></i> Contact us</a>
+                </li>
+            <a href="index.html"><button class="btn btn-outline-info">Sign out</button></a>
+            </ul>
+          </div>
+        </nav>
+
+
+        <form>
+        <div class="container" style="margin-top:30px;">
+                <div class="row">
+                  <div class="col-sm">
+                    <h4>Basic Information:</h4>
+                    
+                        <p>First name: <input type="text" name="FirstName"></p>
+                        <p>Last name: <input type="text" name="LastName"></p>
+                        <p>Sub-lease Title: <input type="text" name="Sublease title"></p>
+                        <p>Address: <input type="text" name="Address"></p>
+                        <p>Rooms Available: <input type="text" name="Rooms available"></p>
+                        <br><br>
+                        <h4>Upload pictures:</h4>
+                        <p>Please upload the pitcures of your room. Both <span style="font-weight:bold">traditional</span> and <span style="font-weight:bold">360 degrees</span> formats are supported. (You can choose only one 360 degrees photo and up to 6 traditional photos.)</p>
+                        <input type = "radio" name = phototype value = 360>360 degrees&nbsp;&nbsp;&nbsp;&nbsp;
+<input type = "radio" name = phototype value = traditional>traditional<br><br>
+Select a file : <input type="file" name="myFile">
+<br><br>
+<p  id="add"><i class="fas fa-plus"></i>Add new pictures</p> 
+<div id="hiddenSelectFile" style="margin-top:10px">Select a file : <input type="file" name="myFile">
+    Select a file : <input type="file" name="myFile">
+    Select a file : <input type="file" name="myFile">
+    Select a file : <input type="file" name="myFile">
+    Select a file : <input type="file" name="myFile">
+</div>
+<br><br>
+
+                  </div>
+                  <div class="col-sm">
+                       <h4>Select the features:</h4> <br>
+                       <div class="container">
+                            <div class="row">
+                              <div class="col-sm">
+                                        <input type = "checkbox" name = "feature" value = covered>  Utility fee covered<br><br>
+
+                                        <input type = "checkbox" name = "feature" value = bus_stop> Bus stop nearby<br><br>
+                                    
+                                        <input type = "checkbox" name = "feature" value = individual_bathroom>  Individual bathroom<br><br>
+                              </div>
+                              <div class="col-sm">
+                                        <input type = "checkbox" name = "feature" value = pet_friendly> Pet friendly<br><br>
+
+                                        <input type = "checkbox" name = "feature" value = pool> Swimming pool<br><br>
+                                    
+                                        <input type = "checkbox" name = "feature" value = gym>  Gym<br><br>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div style="margin-top: 50px;"><h4>Description:</h4> <br>
+                            <textarea rows = "8" cols = "50" name="Description" form="usrform"></textarea>
+                            <br></div>
+                            <div style="margin-top:20px;">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                  </div>
+                  </div>
+                </div>
+              </div>
+</form>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script>
+        $("#hiddenSelectFile").hide();
+          
+        $(document).ready(function(){
+            $("#add").click(function(){
+      $("#hiddenSelectFile").toggle();
+    });
+
+        });
+    </script>
+  </body>
+</html>
